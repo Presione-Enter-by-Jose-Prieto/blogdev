@@ -14,8 +14,8 @@ import Navbar from "@/components/Navbar.astro";
 		<title>{title}</title>
 	</head>
 	<body>
-		<div><Navbar /></div>
-		<main>
+        <div class="block"><Navbar /></div>
+		<main class="flex items-center justify-center flex-col">
 			<slot />
 		</main>
 		<footer></footer>
@@ -39,6 +39,6 @@ import Navbar from "@/components/Navbar.astro";
 			-apple-system,
 			sans-serif;
 		color: var(--text-dark);
-		background: var(--default-dark);
+		background-color: var(--default-dark);
 	}
 </style>

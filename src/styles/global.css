@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Define tu fuente personal aquí */
+@font-face {
+    font-family: 'Sweater';
+    src: url('/src/fonts/Xmas\ Sweater\ Stitch-cfda.woff') format('truetype');
+    /* Ajusta la ruta y formato según tu archivo de fuente */
+}
+
+/* Aplica la fuente al body o elementos específicos */
+body {
+    font-family: 'Sweater', system-ui, -apple-system, sans-serif;
+}

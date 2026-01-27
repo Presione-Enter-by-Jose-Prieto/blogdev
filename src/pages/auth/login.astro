@@ -1,0 +1,18 @@
+---
+import AuthLayout from "@/layouts/AuthLayout.astro";
+---
+
+<AuthLayout title="Iniciar sesión">
+    <div class="w-300 flex justify-center items-center flex-col gap-6 mt-20">
+        <h1>Iniciar sesión</h1>
+        <form action="/auth/login" method="POST" class="flex flex-col gap-4 w-full">
+            <label for="username" class="font-semibold">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required class="p-2 border border-gray-300 rounded">
+    
+            <label for="password" class="font-semibold">Contraseña:</label>
+            <input type="password" id="password" name="password" required class="p-2 border border-gray-300 rounded">
+    
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-300">Iniciar sesión</button>
+        </form>
+    </div>
+</AuthLayout>
